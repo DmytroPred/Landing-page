@@ -5,7 +5,6 @@
 $background-color: #0F0E0E;
 $shadow-color: #080808;
 
-
 body {
     margin: 0;
     background-color: $background-color;
@@ -22,7 +21,7 @@ header {
     box-shadow: 0vw 0.1vw 0.5vw 0.5vw $shadow-color;
 }
 
-.logo {
+.header-logo {
     position: absolute;
 
     font-family: 'Pacifico', cursive;
@@ -55,6 +54,19 @@ header {
 
     background-color: $background-color;
     color: white;
+
+    background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 48%, #64b5ef 75%, rgba(100, 181, 239, 0) 100%);
+    background-repeat: no-repeat;
+    animation: bg-move linear 5s infinite;
+}
+
+@-webkit-keyframes bg-move {
+  0%   { background-position: -500px 0; }
+  100% { background-position: 500px 0; }
+}
+@keyframes bg-move {
+  0%   { background-position: -500px 0; }
+  100% { background-position: 500px 0; }
 }
 
 .header-button:hover {
@@ -150,11 +162,9 @@ h2 {
 .title-container__button:active {
     transform: scale(0.99);
 
-    color: white;
-    background-color: $background-color;
-
     box-shadow: 0.2vw 0.2vw 0.3vw $shadow-color;
 }
+
 .content-container {
     display: grid;
 
@@ -312,6 +322,7 @@ footer {
 .partners__images:hover {
     transform: scale(1.03);
 }
+
 .partners__images:active {
     transform: scale(1.02);
 }
