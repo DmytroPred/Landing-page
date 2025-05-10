@@ -12,13 +12,12 @@ header {
   z-index: 2;
   width: 100vw;
   height: 4vw;
-  -webkit-box-shadow: 0vw 0.1vw 0.5vw 0.5vw #080808;
-          box-shadow: 0vw 0.1vw 0.5vw 0.5vw #080808;
+  box-shadow: 0vw 0.1vw 0.5vw 0.5vw #080808;
 }
 
 .header-logo {
   position: absolute;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-size: 3vw;
   left: 1.5vw;
   color: white;
@@ -39,11 +38,9 @@ header {
   border-radius: 4rem;
   background-color: #0F0E0E;
   color: white;
-  background-image: -webkit-gradient(linear, right top, left top, color-stop(48%, rgba(100, 181, 239, 0)), color-stop(75%, #64b5ef), to(rgba(100, 181, 239, 0)));
   background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 48%, #64b5ef 75%, rgba(100, 181, 239, 0) 100%);
   background-repeat: no-repeat;
-  -webkit-animation: bg-move linear 5s infinite;
-          animation: bg-move linear 5s infinite;
+  animation: bg-move linear 5s infinite;
 }
 
 @-webkit-keyframes bg-move {
@@ -54,7 +51,6 @@ header {
     background-position: 500px 0;
   }
 }
-
 @keyframes bg-move {
   0% {
     background-position: -500px 0;
@@ -63,7 +59,6 @@ header {
     background-position: 500px 0;
   }
 }
-
 .header-button:hover {
   cursor: pointer;
   color: #0F0E0E;
@@ -72,8 +67,7 @@ header {
 }
 
 .header-button:active {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
+  transform: scale(0.99);
 }
 
 main {
@@ -85,8 +79,7 @@ main {
   position: relative;
   height: 100vh;
   margin-bottom: 6%;
-  -webkit-box-shadow: 0vw 0.5vw 0.7vw 0.3vw #080808;
-          box-shadow: 0vw 0.5vw 0.7vw 0.3vw #080808;
+  box-shadow: 0vw 0.5vw 0.7vw 0.3vw #080808;
 }
 
 @media screen and (max-width: 650px) {
@@ -94,13 +87,11 @@ main {
     height: 43vh;
   }
 }
-
 .title-container {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -112,14 +103,14 @@ h2 {
 }
 
 .title-container__header {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: white;
   -webkit-text-stroke: 0.05em black;
   text-shadow: 0.7vw 0.7vw 0.3vw #080808;
 }
 
 .title-container__button {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: bold;
   font-size: 3vw;
   width: 26vw;
@@ -132,9 +123,7 @@ h2 {
   border: 0.1rem #808080 solid;
   border-radius: 4rem;
   padding: 0;
-  -webkit-box-shadow: 0.3vw 0.3vw 0.4vw #080808;
-          box-shadow: 0.3vw 0.3vw 0.4vw #080808;
-  -webkit-transition: all 0.4s ease-out;
+  box-shadow: 0.3vw 0.3vw 0.4vw #080808;
   transition: all 0.4s ease-out;
 }
 
@@ -142,24 +131,18 @@ h2 {
   cursor: pointer;
   color: black;
   background-color: white;
-  -webkit-box-shadow: 0.5vw 0.5vw 0.3vw #080808;
-          box-shadow: 0.5vw 0.5vw 0.3vw #080808;
-  -webkit-transition: all 0.3s ease-out;
+  box-shadow: 0.5vw 0.5vw 0.3vw #080808;
   transition: all 0.3s ease-out;
 }
 
 .title-container__button:active {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
-  -webkit-box-shadow: 0.2vw 0.2vw 0.3vw #080808;
-          box-shadow: 0.2vw 0.2vw 0.3vw #080808;
+  transform: scale(0.99);
+  box-shadow: 0.2vw 0.2vw 0.3vw #080808;
 }
 
 .content-container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .content-container > * {
@@ -170,15 +153,15 @@ h2 {
   display: block;
   width: 70%;
   height: 70%;
+  object-fit: cover;
   margin-left: auto;
   margin-right: auto;
-  -webkit-box-shadow: 0.5vw 0.5vw 0.6vw 0.2vw #080808;
-          box-shadow: 0.5vw 0.5vw 0.6vw 0.2vw #080808;
+  box-shadow: 0.5vw 0.5vw 0.6vw 0.2vw #080808;
 }
 
 .content-container__text > * {
-  font-family: 'Mulish', sans-serif;
-  font-size: 2.5vw;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.5rem;
   display: inline-block;
   text-align: center;
   color: white;
@@ -186,15 +169,9 @@ h2 {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   position: relative;
   padding-top: 5vw;
   padding-bottom: 2vw;
@@ -209,12 +186,9 @@ footer {
   margin: 0;
   height: 15vw;
   width: 15vw;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-animation: rotateSphere 4s linear infinite;
-          animation: rotateSphere 4s linear infinite;
+  transform-style: preserve-3d;
+  animation: rotateSphere 4s linear infinite;
 }
-
 .sphere .sphere__plane {
   position: absolute;
   top: 0;
@@ -226,10 +200,8 @@ footer {
   margin: auto;
   height: 100%;
   width: 100%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-
 .sphere .sphere__plane li {
   position: absolute;
   height: 50%;
@@ -237,14 +209,10 @@ footer {
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-origin: bottom;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
 }
-
 .sphere .sphere__plane li::after {
   content: "";
   position: absolute;
@@ -254,220 +222,133 @@ footer {
   display: inline-block;
   top: 0;
   left: 0;
-  -webkit-transform: translateX(-50%) rotateX(90deg);
-          transform: translateX(-50%) rotateX(90deg);
+  transform: translateX(-50%) rotateX(90deg);
   border-radius: 50%;
 }
-
 .sphere .sphere__plane li:nth-child(1) {
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
+  transform: rotate(15deg);
 }
-
 .sphere .sphere__plane li:nth-child(2) {
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform: rotate(30deg);
 }
-
 .sphere .sphere__plane li:nth-child(3) {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
 .sphere .sphere__plane li:nth-child(4) {
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
+  transform: rotate(60deg);
 }
-
 .sphere .sphere__plane li:nth-child(5) {
-  -webkit-transform: rotate(75deg);
-          transform: rotate(75deg);
+  transform: rotate(75deg);
 }
-
 .sphere .sphere__plane li:nth-child(6) {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
-
 .sphere .sphere__plane li:nth-child(7) {
-  -webkit-transform: rotate(105deg);
-          transform: rotate(105deg);
+  transform: rotate(105deg);
 }
-
 .sphere .sphere__plane li:nth-child(8) {
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
+  transform: rotate(120deg);
 }
-
 .sphere .sphere__plane li:nth-child(9) {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  transform: rotate(135deg);
 }
-
 .sphere .sphere__plane li:nth-child(10) {
-  -webkit-transform: rotate(150deg);
-          transform: rotate(150deg);
+  transform: rotate(150deg);
 }
-
 .sphere .sphere__plane li:nth-child(11) {
-  -webkit-transform: rotate(165deg);
-          transform: rotate(165deg);
+  transform: rotate(165deg);
 }
-
 .sphere .sphere__plane li:nth-child(12) {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-
 .sphere .sphere__plane:nth-child(1) {
-  -webkit-transform: rotateY(15deg);
-          transform: rotateY(15deg);
+  transform: rotateY(15deg);
 }
-
 .sphere .sphere__plane:nth-child(2) {
-  -webkit-transform: rotateY(30deg);
-          transform: rotateY(30deg);
+  transform: rotateY(30deg);
 }
-
 .sphere .sphere__plane:nth-child(3) {
-  -webkit-transform: rotateY(45deg);
-          transform: rotateY(45deg);
+  transform: rotateY(45deg);
 }
-
 .sphere .sphere__plane:nth-child(4) {
-  -webkit-transform: rotateY(60deg);
-          transform: rotateY(60deg);
+  transform: rotateY(60deg);
 }
-
 .sphere .sphere__plane:nth-child(5) {
-  -webkit-transform: rotateY(75deg);
-          transform: rotateY(75deg);
+  transform: rotateY(75deg);
 }
-
 .sphere .sphere__plane:nth-child(6) {
-  -webkit-transform: rotateY(90deg);
-          transform: rotateY(90deg);
+  transform: rotateY(90deg);
 }
-
 .sphere .sphere__plane:nth-child(7) {
-  -webkit-transform: rotateY(105deg);
-          transform: rotateY(105deg);
+  transform: rotateY(105deg);
 }
-
 .sphere .sphere__plane:nth-child(8) {
-  -webkit-transform: rotateY(120deg);
-          transform: rotateY(120deg);
+  transform: rotateY(120deg);
 }
-
 .sphere .sphere__plane:nth-child(9) {
-  -webkit-transform: rotateY(135deg);
-          transform: rotateY(135deg);
+  transform: rotateY(135deg);
 }
-
 .sphere .sphere__plane:nth-child(10) {
-  -webkit-transform: rotateY(150deg);
-          transform: rotateY(150deg);
+  transform: rotateY(150deg);
 }
-
 .sphere .sphere__plane:nth-child(11) {
-  -webkit-transform: rotateY(165deg);
-          transform: rotateY(165deg);
+  transform: rotateY(165deg);
 }
-
 .sphere .sphere__plane:nth-child(12) {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
-
 .sphere .sphere__plane:nth-child(13) {
-  -webkit-transform: rotateY(195deg);
-          transform: rotateY(195deg);
+  transform: rotateY(195deg);
 }
-
 .sphere .sphere__plane:nth-child(14) {
-  -webkit-transform: rotateY(210deg);
-          transform: rotateY(210deg);
+  transform: rotateY(210deg);
 }
-
 .sphere .sphere__plane:nth-child(15) {
-  -webkit-transform: rotateY(225deg);
-          transform: rotateY(225deg);
+  transform: rotateY(225deg);
 }
-
 .sphere .sphere__plane:nth-child(16) {
-  -webkit-transform: rotateY(240deg);
-          transform: rotateY(240deg);
+  transform: rotateY(240deg);
 }
-
 .sphere .sphere__plane:nth-child(17) {
-  -webkit-transform: rotateY(255deg);
-          transform: rotateY(255deg);
+  transform: rotateY(255deg);
 }
-
 .sphere .sphere__plane:nth-child(18) {
-  -webkit-transform: rotateY(270deg);
-          transform: rotateY(270deg);
+  transform: rotateY(270deg);
 }
-
 .sphere .sphere__plane:nth-child(19) {
-  -webkit-transform: rotateY(285deg);
-          transform: rotateY(285deg);
+  transform: rotateY(285deg);
 }
-
 .sphere .sphere__plane:nth-child(20) {
-  -webkit-transform: rotateY(300deg);
-          transform: rotateY(300deg);
+  transform: rotateY(300deg);
 }
-
 .sphere .sphere__plane:nth-child(21) {
-  -webkit-transform: rotateY(315deg);
-          transform: rotateY(315deg);
+  transform: rotateY(315deg);
 }
-
 .sphere .sphere__plane:nth-child(22) {
-  -webkit-transform: rotateY(330deg);
-          transform: rotateY(330deg);
+  transform: rotateY(330deg);
 }
-
 .sphere .sphere__plane:nth-child(23) {
-  -webkit-transform: rotateY(345deg);
-          transform: rotateY(345deg);
+  transform: rotateY(345deg);
 }
-
 .sphere .sphere__plane:nth-child(24) {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-}
-
-@-webkit-keyframes rotateSphere {
-  0% {
-    -webkit-transform: rotate3d(1, 1, 1, -360deg);
-            transform: rotate3d(1, 1, 1, -360deg);
-  }
-  100% {
-    -webkit-transform: rotate3d(0, 0, 0, 360deg);
-            transform: rotate3d(0, 0, 0, 360deg);
-  }
+  transform: rotateY(360deg);
 }
 
 @keyframes rotateSphere {
   0% {
-    -webkit-transform: rotate3d(1, 1, 1, -360deg);
-            transform: rotate3d(1, 1, 1, -360deg);
+    transform: rotate3d(1, 1, 1, -360deg);
   }
   100% {
-    -webkit-transform: rotate3d(0, 0, 0, 360deg);
-            transform: rotate3d(0, 0, 0, 360deg);
+    transform: rotate3d(0, 0, 0, 360deg);
   }
 }
-
 .partners {
   position: relative;
   margin-left: 8vw;
 }
 
 .partners__header {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 4vw;
   color: white;
   text-shadow: 0.5vw 0.5vw 0.4vw #080808;
@@ -482,12 +363,11 @@ footer {
 }
 
 .partners__images:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .partners__images:active {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
+
 /*# sourceMappingURL=style.css.map */
